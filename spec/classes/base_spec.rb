@@ -50,7 +50,7 @@ describe 'logrotate::base' do
       'owner'   => 'root',
       'group'   => 'root',
       'mode'    => '0444',
-      'source'  => 'puppet:///modules/logrotate/etc/logrotate.conf',
+      'content' => /# THIS FILE IS AUTOMATICALLY DISTRIBUTED BY PUPPET.  ANY CHANGES WILL BE/,
       'require' => 'Package[logrotate]',
     })
 
